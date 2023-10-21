@@ -1,4 +1,4 @@
-<h3 align="center">Enum Basics Extension</h3>
+<h3 align="center">Enum Basics Extension for Laravel</h3>
 
 ## 🧐 Sobre <a name = "about"></a>
 

@@ -1,0 +1,33 @@
+{
+  "name": "gustavosantarosa/enum-basics-extension",
+  "license": "MIT",
+  "homepage": "http://www.gustavosantarosa.esy.es/",
+  "description": "Enum Basics Extension",
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^11.0@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "GustavoSantarosa\\EnumBasicsExtension\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Luis Gustavo Santarosa",
+      "email": "gustavo-computacao@hotmail.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "email": "gustavo-computacao@hotmail.com"
+  },
+  "minimum-stability": "dev",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "GustavoSantarosa\\EnumBasicsExtension\\Provider\\EnumBasicsExtensionProvider"
+      ]
+    }
+  }
+}

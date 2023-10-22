@@ -17,7 +17,7 @@ e extender ela na sua classe de enum.
 
 Pronto, ja é para estar funcionando.
 
-## 🎈 Utilizando
+## 🎈 Recursos
 
 Nele existem algumas ferramentas uteis.
 
@@ -27,7 +27,14 @@ Nele existem algumas ferramentas uteis.
   - Checa se um nome é valido.
   - Coleta as constantes.
 
-## ⛏️ Utilizado
+## 🧐 Outras Bibliotecas
+
+- [SetSchema-Trait](https://packagist.org/packages/gustavosantarosa/setschema-trait-postgresql) - Suprir a necessidade de setar os schemas automaticamente do PostgreSQL;
+- [Validate-Trait](https://packagist.org/packages/gustavosantarosa/validate-trait) - Bindar os Requests automaticamente de acordo com o caminho do Service Pattern;
+- [PerPage-Trait](https://packagist.org/packages/gustavosantarosa/perpage-trait) - Padronizar a quantidade do paginate na api inteira e definir uma quantidade máxima;
+- [Handler-Basics-Extension](https://packagist.org/packages/gustavosantarosa/handler-basics-extension) - Contem tratamento das principais exceções do laravel, e contem varios responses para lhe auxiliar;
+
+## ⛏️ Ferramentas
 
 - [php](https://www.php.net/) - linguagem
 

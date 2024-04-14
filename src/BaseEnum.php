@@ -2,6 +2,8 @@
 
 namespace GustavoSantarosa\EnumBasicsExtension;
 
+use Illuminate\Support\Collection;
+
 abstract class BaseEnum
 {
     private static $constCacheArray;
@@ -45,30 +47,30 @@ abstract class BaseEnum
      */
     public static function filterConstants(string $startWithStr): array
     {
-        return array_filter(static::getConstants(), static fn($key) => 0 === mb_strpos($key, $startWithStr), \ARRAY_FILTER_USE_KEY);
+        return array_filter(static::getConstants(), static fn ($key) => 0 === mb_strpos($key, $startWithStr), \ARRAY_FILTER_USE_KEY);
     }
 
     /**
      * Return available types.
      */
-    public static function types(): array
+    public static function types(): Collection
     {
-        return static::filterConstants('TYPE');
+        return new Collection(static::filterConstants('TYPE'));
     }
 
     /**
      * Return available statuses.
      */
-    public static function statuses(): array
+    public static function statuses(): Collection
     {
-        return static::filterConstants('STATUS');
+        return new Collection(static::filterConstants('STATUS'));
     }
 
     /**
      * Return available sources.
      */
-    public static function sources(): array
+    public static function sources(): Collection
     {
-        return static::filterConstants('SOURCE');
+        return new Collection(static::filterConstants('SOURCE'));
     }
 }
